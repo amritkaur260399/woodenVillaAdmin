@@ -1,0 +1,20 @@
+.ant-pro-sider-logo > a > h1 {
+  display: none !important;
+}
+.ant-pro-sider-logo > a {
+  /* width: 100%; */
+  width: 80%;
+}
+.ant-pro-sider-logo > a > img {
+  /* width: 100%; */
+  width: 60%;
+  height: 1%;
+}
+.ant-pro-sider-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px !important;
+  cursor: pointer;
+  transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

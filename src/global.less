@@ -1,0 +1,307 @@
+@import '~antd/es/style/themes/default.less';
+// import richtext editor css
+@import '~react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+// import react image lightbox css
+@import '~react-image-lightbox/style.css';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+.ant-table-thead > tr > th {
+  padding: 7px 16px !important;
+  color: #fafafa !important ;
+  background: #10181e !important;
+}
+.ant-table-thead > tr > th:last-child {
+  padding-right: 5px !important ;
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}
+.ant-table-thead > tr > th:first-child {
+  border-top-left-radius: 7px !important;
+  border-bottom-left-radius: 7px !important;
+}
+.ant-modal-content {
+  overflow: hidden !important;
+  border-radius: 7px !important;
+}
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.formLabel {
+  font-weight: 500;
+}
+// .ant-menu-submenu-title {
+//   // color: #02233f;
+//   color: #0899f8;
+// }
+
+.ant-pro-menu-item {
+  color:#612C13 !important;
+}
+
+.ant-layout-sider.ant-layout-sider-light.ant-pro-sider.ant-pro-sider-fixed.ant-pro-sider-layout-side.ant-pro-sider-light {
+  background-color: #F7EEE1;
+}
+
+// .ant-menu-item.ant-menu-item-active.ant-menu-item-selected.ant-menu-item-only-child {
+//   background-color: #9FA2B4;
+//   color: red;
+//   border-right: none;
+
+// }
+
+// .ant-menu-item-active.ant-menu-item-selected {
+//   color: red;
+// }
+
+// .ant-menu-item-active {
+//   background-color: red;
+// }
+
+// .vidyaFormLabel {
+//   color: #6b778c;
+//   font-weight: 600;
+//   font-size: 12px;
+//   text-transform: uppercase;
+// }
+
+.ant-pro-global-header {
+  height: 70px !important;
+}
+.ant-tabs-tab {
+  margin-left: 7px;
+}
+.border {
+  border: 0.1rem solid var(--p-border-subdued, #dfe3e8);
+}
+.border-b {
+  border-bottom: 0.1rem solid var(--p-border-subdued, #dfe3e8);
+}
+.border-t {
+  border-top: 0.1rem solid var(--p-border-subdued, #dfe3e8);
+}
+.border-r {
+  border-right: 0.1rem solid var(--p-border-subdued, #dfe3e8);
+}
+.border-l {
+  border-left: 0.1rem solid var(--p-border-subdued, #dfe3e8);
+}
+
+.editor {
+  min-height: 256px;
+  padding: 16px;
+  border: 1px solid #dfe3e8;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0 !important;
+}
+.rdw-option-wrapper {
+  border: none;
+}
+.rdw-dropdown-selectedtext {
+  color: black;
+  font-weight: 400;
+}
+.AppModal {
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+.fixedModalFooter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  width: 95% !important;
+  overflow-x: hidden;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 21, 41, 0.15);
+}
+
+.fixedProductModalFooter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  width: 95%;
+  overflow-x: hidden;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 21, 41, 0.15);
+}
+
+.ant-btn {
+  border-radius: 7px;
+}
+
+.appFormLabel {
+  color: #6b778c;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.fixedFooter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 21, 41, 0.15);
+  transition: width 0.2s;
+}
+
+.app-step-title-full {
+  .ant-steps-item-title {
+    width: 100%;
+  }
+}
+// .ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),
+// .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners {
+//   min-height: 150px;
+//   max-height: 300px;
+//   padding: 7px;
+//   // line-height: 1.5em;
+//   border: 1px solid #d1d1d1;
+// }
+p {
+  line-height: 0;
+}
+.ant-menu-item.ant-menu-item-active.ant-menu-item-selected.ant-menu-item-only-child {
+  background-color: rgb(220, 217, 217);
+  color: #F7EEE1;
+  
+  // border-right: none;
+
+}
+
+.ant-menu-item-active.ant-menu-item-selected {
+  color: #F7EEE1;
+}
+.css-1hwfws3 {
+  width: 330px;
+}
+.ant-table-thead > tr > th {
+  padding: 7px 16px !important;
+  color: #fafafa !important ;
+  background: #612C13 !important;
+}
+.ant-table-thead > tr > th:last-child {
+  padding-right: 5px !important ;
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}
+.ant-table-thead > tr > th:first-child {
+  border-top-left-radius: 7px !important;
+  border-bottom-left-radius: 7px !important;
+}
+.ant-modal-content {
+  overflow: hidden !important;
+  border-radius: 7px !important;
+  padding: 12px !important;
+  
+}
+
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners {
+  min-height: 150px;
+  max-height: 300px;
+  padding: 7px;
+  // line-height: 1.5em;
+  border: 1px solid #d1d1d1;
+}
+.AppModal {
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.formLabel {
+  font-weight: 500;
+}
